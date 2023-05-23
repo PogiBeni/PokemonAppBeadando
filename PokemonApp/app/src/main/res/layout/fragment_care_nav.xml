@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav.CareNav">
+
+    <ImageView
+        android:id="@+id/imageViewPapper2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/big_papper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Previous"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/darkPaper"
+        android:fontFamily="@font/pixel_art_stylefont"
+        android:text="←"
+        android:textAlignment="textStart"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+        app:layout_constraintEnd_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toTopOf="@+id/textViewName" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/darkPaper"
+        android:fontFamily="@font/pixel_art_stylefont"
+        android:text="→"
+        android:textAlignment="textEnd"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+        app:layout_constraintStart_toEndOf="@+id/textViewName"
+        app:layout_constraintTop_toTopOf="@+id/textViewName" />
+
+    <Button
+        android:id="@+id/Pet"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/darkPaper"
+        android:fontFamily="@font/pixel_art_stylefont"
+        android:text="Pet"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/Previous"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <ImageButton
+        android:id="@+id/Dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#00ffffff"
+        android:fontFamily="@font/pixel_art_stylefont"
+        android:src="@drawable/dice"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Pet"
+        app:layout_constraintTop_toBottomOf="@+id/Pet" />
+
+    <ImageButton
+        android:id="@+id/DeletePokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#00ffffff"
+        android:fontFamily="@font/pixel_art_stylefont"
+        android:src="@drawable/trash_can"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Pet"
+        app:layout_constraintTop_toBottomOf="@+id/Pet" />
+
+    <TextView
+        android:id="@+id/textViewName"
+
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="244dp"
+        android:background="@color/Paper"
+        android:clickable="false"
+        android:fontFamily="@font/pixel_art_stylefont"
+        android:text="No pokemon caught!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPapper2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="400dp"
+        android:src="@drawable/questionmark"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPapper2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

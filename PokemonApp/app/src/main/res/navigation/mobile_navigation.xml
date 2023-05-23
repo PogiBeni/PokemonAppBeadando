@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/home_nav">
+    <fragment
+        android:id="@+id/home_nav"
+        android:name="com.example.pokemonapp.nav.HomeNav"
+        android:label="fragment_home_nav"
+        tools:layout="@layout/fragment_home_nav" />
+    <fragment
+        android:id="@+id/book_nav"
+        android:name="com.example.pokemonapp.nav.BookNav"
+        android:label="fragment_book_nav"
+        tools:layout="@layout/fragment_book_nav" />
+    <fragment
+        android:id="@+id/pokeball_nav"
+        android:name="com.example.pokemonapp.nav.PokeballNav"
+        android:label="fragment_pokeball_nav"
+        tools:layout="@layout/fragment_pokeball_nav" />
+    <fragment
+        android:id="@+id/care_nav"
+        android:name="com.example.pokemonapp.nav.CareNav"
+        android:label="fragment_care_nav"
+        tools:layout="@layout/fragment_care_nav" />
+</navigation>

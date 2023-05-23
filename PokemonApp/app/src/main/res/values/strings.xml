@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PokemonApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="care">Care</string>
+    <string name="pokeball">PokeBall</string>
+    <string name="book">Book</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
